@@ -10,7 +10,7 @@ const Home = () => {
       0.1,
       1000
     );
-    camera.position.set(4, 4, 8);
+    camera.position.set(4, 4, 8);       
 
     const canvas = document.querySelector(".homeCanvas");
     const renderer = new THREE.WebGLRenderer({ canvas });
