@@ -120,6 +120,7 @@ const Home = () => {
   return (
     <div className="home">
       <canvas className="homeCanvas"></ canvas>
+      <TimeLine />
     </div>
   );
 };
