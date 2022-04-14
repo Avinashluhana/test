@@ -119,9 +119,11 @@ const Home = () => {
   }, []);
   return (
     <div className="home">
-      <canvas className="homeCanvas"></ canvas>
-      <TimeLine />
-
+      <canvas className="homeCanvas"></canvas>
+      <div className="homeContainer">
+        <Typography variant="h3">Timeline</Typography>
+        <TimeLine timelines={[1, 2, 3, 4]} />
+      </div>
     </div>
   );
 };

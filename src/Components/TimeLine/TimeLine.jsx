@@ -15,14 +15,14 @@ const TimeLine = ({ timelines = [] }) => {
       <Timeline position="alternate">
         {timelines.map((item, index) => (
           <TimelineItem key={index}>
-            <TimelineOppositeContent
-              sx={{ m: "auto 0" }}
+            {/* <TimelineOppositeContent
+              sx={{ m: "auto 0" }}  
               align="right"
               variant="body2"
               color="text.secondary"
             >
               {item.date.toString().split("T")[0]}
-            </TimelineOppositeContent>
+            </TimelineOppositeContent> */}
 
             <TimelineSeparator>
               <TimelineConnector />
@@ -32,8 +32,8 @@ const TimeLine = ({ timelines = [] }) => {
               <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent sx={{ py: "12px", px: 2 }}>
-              <Typography variant="h6">{item.title}</Typography>
-              <Typography>{item.description}</Typography>
+              <Typography variant="h6">Title</Typography>
+              <Typography>Description</Typography>
             </TimelineContent>
           </TimelineItem>
         ))}
