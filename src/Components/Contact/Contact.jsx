@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import "./Contact.css";
 import { useAlert } from "react-alert";
-import { contactUs } from "../../actions/user";
+// import { contactUs } from "../../actions/user";
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -20,7 +20,7 @@ const Contact = () => {
 
   const contactFormHandler = (e) => {
     e.preventDefault();
-    dispatch(contactUs(name, email, message));
+    // dispatch(contactUs(name, email, message));
   };
 
   useEffect(() => {
